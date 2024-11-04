@@ -1,0 +1,27 @@
+linear search
+import java.util.Scanner;
+public class Main{
+    public static void main(String[]args){
+        Scanner scanner=new Scanner(System.in);
+        System.out.print("Enter the size of the array:");
+        int size =scanner.nextInt();
+        int[] array = new int[size];
+        System.out.print("Enter the elements of the array:");
+        for (int i=0;i<size;i++){
+            array[i]=scanner.nextInt();
+        }
+        int key=20;
+        for (int i=0;i<size;i++){
+            if(array[i]==key){
+                System.out.println("element is there in the array"); 
+                break;   
+            
+                
+            }
+        }
+            
+           }
+}
+op:Enter the size of the array:5
+Enter the elements of the array:2 34 54 56 20
+element is there in the array

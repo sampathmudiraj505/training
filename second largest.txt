@@ -1,0 +1,28 @@
+second largest
+import java.util.Scanner;
+public class Main{
+    public static void main(String[]args){
+        Scanner scanner=new Scanner(System.in);
+        System.out.print("Enter the size of the array:");
+        int size =scanner.nextInt();
+        int[] array = new int[size];
+        System.out.print("Enter the elements of the array:");
+        for (int i=0;i<size;i++){
+            array[i]=scanner.nextInt();
+        }
+        int largest =array[0];
+        for(int i=1;i<size;i++){
+            if(array[i]>largest) largest=array[i];
+            
+        }
+       int s_largest=-1;
+       for(int i=0;i<size;i++){
+           if(array[i]>s_largest&& array[i]!=largest)s_largest=array[i];
+           
+       }
+            System.out.println(s_largest);
+    }
+}
+op:Enter the size of the array:4
+Enter the elements of the array:2 3 5 6
+5
